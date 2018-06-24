@@ -201,41 +201,6 @@ class ViewControllerPivot: UIViewController
 
 		self.activityindicator.startAnimating()
 
-		self.open.text = String(format:"%.3f", 0)
-		self.high.text = String(format:"%.3f", 0)
-		self.low.text = String(format:"%.3f", 0)
-		self.close.text = String(format:"%.3f", 0)
-
-		self.p_r3.text = String(format:"%.3f", 0)
-		self.p_r2.text = String(format:"%.3f", 0)
-		self.p_r1.text = String(format:"%.3f", 0)
-
-		self.p_pivot.text = String(format:"%.3f", 0)
-
-		self.p_s1.text = String(format:"%.3f", 0)
-		self.p_s2.text = String(format:"%.3f", 0)
-		self.p_s3.text = String(format:"%.3f", 0)
-
-		self.f_r3.text = String(format:"%.3f", 0)
-		self.f_r2.text = String(format:"%.3f", 0)
-		self.f_r1.text = String(format:"%.3f", 0)
-
-		self.f_pivot.text = String(format:"%.3f", 0)
-
-		self.f_s1.text = String(format:"%.3f", 0)
-		self.f_s2.text = String(format:"%.3f", 0)
-		self.f_s3.text = String(format:"%.3f", 0)
-
-		self.c_r4.text = String(format:"%.3f", 0)
-		self.c_r3.text = String(format:"%.3f", 0)
-		self.c_r2.text = String(format:"%.3f", 0)
-		self.c_r1.text = String(format:"%.3f", 0)
-
-		self.c_s1.text = String(format:"%.3f", 0)
-		self.c_s2.text = String(format:"%.3f", 0)
-		self.c_s3.text = String(format:"%.3f", 0)
-		self.c_s4.text = String(format:"%.3f", 0)
-
 		DataAccess().getOHLCData(symbol)
 		{
 			(dict, error) in
@@ -299,9 +264,44 @@ class ViewControllerPivot: UIViewController
 			else
 			{
 				self.handleNetworkError(error: error);
-				
 				DispatchQueue.main.async /* update UI on main thread */
-				{ self.activityindicator.stopAnimating() }
+				{
+					self.activityindicator.stopAnimating()
+					self.open.text = String(format:"%.3f", 0)
+					self.high.text = String(format:"%.3f", 0)
+					self.low.text = String(format:"%.3f", 0)
+					self.close.text = String(format:"%.3f", 0)
+
+					self.p_r3.text = String(format:"%.3f", 0)
+					self.p_r2.text = String(format:"%.3f", 0)
+					self.p_r1.text = String(format:"%.3f", 0)
+
+					self.p_pivot.text = String(format:"%.3f", 0)
+
+					self.p_s1.text = String(format:"%.3f", 0)
+					self.p_s2.text = String(format:"%.3f", 0)
+					self.p_s3.text = String(format:"%.3f", 0)
+
+					self.f_r3.text = String(format:"%.3f", 0)
+					self.f_r2.text = String(format:"%.3f", 0)
+					self.f_r1.text = String(format:"%.3f", 0)
+
+					self.f_pivot.text = String(format:"%.3f", 0)
+
+					self.f_s1.text = String(format:"%.3f", 0)
+					self.f_s2.text = String(format:"%.3f", 0)
+					self.f_s3.text = String(format:"%.3f", 0)
+
+					self.c_r4.text = String(format:"%.3f", 0)
+					self.c_r3.text = String(format:"%.3f", 0)
+					self.c_r2.text = String(format:"%.3f", 0)
+					self.c_r1.text = String(format:"%.3f", 0)
+
+					self.c_s1.text = String(format:"%.3f", 0)
+					self.c_s2.text = String(format:"%.3f", 0)
+					self.c_s3.text = String(format:"%.3f", 0)
+					self.c_s4.text = String(format:"%.3f", 0)
+				}
 			}
 		}
 	}

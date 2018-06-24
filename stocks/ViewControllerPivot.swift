@@ -26,27 +26,6 @@
 //	of pivot points for a given stock
 //	https://en.wikipedia.org/wiki/Pivot_point_(technical_analysis)
 
-//	pivot point calculations use a
-//	stock's high, low, and closing
-//	price from the previous day
-
-//	everything is done in the
-//	getPivotPoints action method
-
-//	data is provided by ALPHA VANTAGE
-//	https://www.alphavantage.co
-
-//	YOU HAVE TO REQUEST AN API KEY
-//	FROM ALPHA VANTAGE TO CHANGE
-//	_ANY_ OF THE ARGUMENTS TO
-//	-(void)getAVDataIntraday:(NSString *)function
-//		symbol:(NSString *)symbol
-//		interval:(NSString *)interval
-//		completion:(void (^)(NSDictionary *dict, NSError *error))block
-//	OR
-//	-(void)getAVDataDaily:(NSString *)symbol
-//		completion:(void (^)(NSDictionary *dict, NSError *error))block
-
 //	MARK: ViewControllerPivot
 class ViewControllerPivot: UIViewController
 {

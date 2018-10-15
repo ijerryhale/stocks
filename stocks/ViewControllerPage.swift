@@ -50,7 +50,7 @@ class PageViewController: UIPageViewController
 	}
 
 	//	- parameter viewController: the view controller to show.
-    private func scrollToViewController(_ viewController: UIViewController, direction: UIPageViewControllerNavigationDirection = .forward)
+    private func scrollToViewController(_ viewController: UIViewController, direction: UIPageViewController.NavigationDirection = .forward)
     {
         setViewControllers([viewController], direction: direction, animated: true, completion:
 		{

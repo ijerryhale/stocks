@@ -16,6 +16,15 @@ Add custom UIPageControllerView and custom UIPageControl. Custom UIPageControl i
 
 Add UISearchBar to implement searching short sale list by Stock Symbol or Company Name.
 
+### October 15, 2018
+
+Update to XCode 10, Swift 4.2
+
+## Requirements
+
+- XCode 10+
+- iOS 11+
+- Swift 4.2+
 
 ![ibshortshares](https://cormya.com/image/_short_list_blue.png "Interactive Brokers Short Shares List") | ![symbolsearch](https://cormya.com/image/_symbol_search.png "Symbol Search") |
 :-------------------------:|:-------------------------:

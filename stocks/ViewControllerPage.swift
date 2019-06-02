@@ -1,5 +1,5 @@
 //	ViewControllerPage.swift
-// Copyright (c) 2018 Jerry Hale
+// Copyright (c) 2019 Jerry Hale
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -59,7 +59,7 @@ class PageViewController: UIPageViewController
                 // any delegate methods, so we have to manually notify the
                 // 'tutorialDelegate' of the new index.
 			if let firstViewController = self.viewControllers?.first,
-				let index = self.page.index(of: firstViewController)
+				let index = self.page.firstIndex(of: firstViewController)
 				{
 					self.pageviewcontrollerdelegate?.didUpdatePageIndex(index)
 				}
@@ -84,7 +84,7 @@ extension PageViewController: UIPageViewControllerDataSource
 {
 	func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
 	{
-		guard let index = page.index(of: viewController) else { return (nil) }
+		guard let index = page.firstIndex(of: viewController) else { return (nil) }
 		
 		//	user is on the first view controller and
 		//	swiped left to loop to the last view controller
@@ -96,7 +96,7 @@ extension PageViewController: UIPageViewControllerDataSource
 
 	func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
 	{
-		guard let index = page.index(of: viewController) else { return (nil) }
+		guard let index = page.firstIndex(of: viewController) else { return (nil) }
 
 		let pageCount = page.count
 		
@@ -117,7 +117,7 @@ extension PageViewController: UIPageViewControllerDelegate
 
 	{
 		if let viewController = viewControllers?.first,
-			let index = page.index(of: viewController) { pageviewcontrollerdelegate?.didUpdatePageIndex(index) }
+			let index = page.firstIndex(of: viewController) { pageviewcontrollerdelegate?.didUpdatePageIndex(index) }
 	}
 }
 

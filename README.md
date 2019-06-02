@@ -16,15 +16,19 @@ Add custom UIPageControllerView and custom UIPageControl. Custom UIPageControl i
 
 Add UISearchBar to implement searching short sale list by Stock Symbol or Company Name.
 
-### October 15, 2018
+## October 15, 2018
 
 Update to XCode 10, Swift 4.2
+
+## June 2, 2019
+
+Update to Swift 5.
 
 ## Requirements
 
 - XCode 10+
 - iOS 11+
-- Swift 4.2+
+- Swift 5+
 
 ![ibshortshares](https://cormya.com/image/_short_list_blue.png "Interactive Brokers Short Shares List") | ![symbolsearch](https://cormya.com/image/_symbol_search.png "Symbol Search") |
 :-------------------------:|:-------------------------:
@@ -41,7 +45,3 @@ Dump the old 90's looking greyscale UI and built Theme based UI. Add Table Foote
 **Cherry Theme** | **Aluminum Theme**
 
 ![symbolsearch](https://cormya.com/image/themecolors.png "Theme Colors")
-
-## June 24, 2018
-
-Delete **stocks** GitHub repository again. Redesign PivotPoints to solve speed issues by moving a lot of stuff on to cormya.com. Replace a lot of app processing code with PHP running on the server. Cache a lot of stuff on the server.

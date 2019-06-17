@@ -1,4 +1,4 @@
-//	UIColor+Background.h
+//	PivotHeaderView.swift
 // Copyright (c) 2019 Jerry Hale
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -20,35 +20,29 @@
 // THE SOFTWARE.
 
 //
-//  Created by Jerry Hale on 5/27/18.
+//  Created by Jerry Hale on 6/15/19.
 
-#import <UIKit/UIKit.h>
+import UIKit
 
-@interface UIColor (Theme)
-+(UIColor *)themeColor:(NSUInteger)rgbHexValue;
-@end
+import UIKit
 
-@interface UIView (Theme)
--(void)setBorderColor:(UIColor *)color;
--(void)setBorderWidth:(CGFloat)width;
--(void)setCornerRadius:(CGFloat)radius;
-@end
-
-@interface UILabel (Theme)
--(void)setBackColor:(UIColor *)color;
--(void)setBorderColor:(UIColor *)color;
--(void)setBorderWidth:(CGFloat)width;
--(void)setCornerRadius:(CGFloat)radius;
-@end
-
-@interface UISearchBar (Theme)
--(void)setBorderColor:(UIColor *)color;
--(void)setBorderWidth:(CGFloat)width;
--(void)setCornerRadius:(CGFloat)radius;
-@end
-
-@interface UITableView (Theme)
--(void)setBorderColor:(UIColor *)color;
--(void)setBorderWidth:(CGFloat)width;
--(void)setCornerRadius:(CGFloat)radius;
-@end
+@IBDesignable
+class PivotHeaderView: UIView
+{
+    @IBOutlet weak var name: LabelPadded!
+    
+//    var height = 1.0
+//    
+//    override open var intrinsicContentSize: CGSize {
+//        get {
+//            //...
+//            return CGSize(width: 1.0, height: height)
+//        }
+//    }
+    required init?(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(frame: CGRect) { super.init(frame: frame) }
+}

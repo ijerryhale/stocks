@@ -10,6 +10,8 @@
 		2C1E984020AE568B00DEB1BC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1E983F20AE568B00DEB1BC /* AFNetworking.framework */; };
 		2C1E984220AE591100DEB1BC /* AFNetworking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C1E983F20AE568B00DEB1BC /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2C2F07EA20BB5A8F00CA6C8F /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F07E920BB5A8E00CA6C8F /* UIColor+Theme.m */; };
+		2C31E36022B579C600F6C7FB /* PivotRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C31E35F22B579C600F6C7FB /* PivotRowView.swift */; };
+		2C31E36222B579CE00F6C7FB /* PivotRowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C31E36122B579CE00F6C7FB /* PivotRowView.xib */; };
 		2C4C199420B4C5E2006D35C1 /* ViewControllerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C199220B4C5E1006D35C1 /* ViewControllerPage.swift */; };
 		2C6B6B9A20B630A6008B9FF9 /* ViewControllerBorrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B6B9920B630A6008B9FF9 /* ViewControllerBorrow.swift */; };
 		2C6B6B9D20B63709008B9FF9 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B6B9B20B63709008B9FF9 /* CHCSVParser.m */; };
@@ -18,6 +20,8 @@
 		2C81E79F20ADFA320097DB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C81E79E20ADFA320097DB86 /* Assets.xcassets */; };
 		2C81E7AD20ADFA320097DB86 /* stocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C81E7AC20ADFA320097DB86 /* stocksTests.swift */; };
 		2C81E7B720ADFB4E0097DB86 /* DictionaryKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C81E7B620ADFB4E0097DB86 /* DictionaryKey.m */; };
+		2C8B6FB122B59B8A00DB4348 /* PivotHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B6FAF22B59B8A00DB4348 /* PivotHeaderView.xib */; };
+		2C8B6FB222B59B8A00DB4348 /* PivotHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B6FB022B59B8A00DB4348 /* PivotHeaderView.swift */; };
 		2CB281DF20BC596300CBF2A4 /* LabelPadded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB281DE20BC596300CBF2A4 /* LabelPadded.swift */; };
 		2CCED4F920B72841009A225B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C81E7A020ADFA320097DB86 /* LaunchScreen.storyboard */; };
 		2CCED4FB20B72860009A225B /* RowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDE129220B7228700D1CFCA /* RowCell.swift */; };
@@ -54,6 +58,8 @@
 		2C22BC2D20B228DB0010677C /* stocks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "stocks-Bridging-Header.h"; sourceTree = "<group>"; };
 		2C2F07E820BB5A8E00CA6C8F /* UIColor+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Theme.h"; sourceTree = "<group>"; };
 		2C2F07E920BB5A8E00CA6C8F /* UIColor+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Theme.m"; sourceTree = "<group>"; };
+		2C31E35F22B579C600F6C7FB /* PivotRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PivotRowView.swift; path = Resource/PivotRowView.swift; sourceTree = "<group>"; };
+		2C31E36122B579CE00F6C7FB /* PivotRowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PivotRowView.xib; path = Resource/PivotRowView.xib; sourceTree = "<group>"; };
 		2C4C199220B4C5E1006D35C1 /* ViewControllerPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPage.swift; sourceTree = "<group>"; };
 		2C6B6B9920B630A6008B9FF9 /* ViewControllerBorrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBorrow.swift; sourceTree = "<group>"; };
 		2C6B6B9B20B63709008B9FF9 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 		2C81E7AE20ADFA320097DB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C81E7B520ADFB4E0097DB86 /* DictionaryKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryKey.h; sourceTree = "<group>"; };
 		2C81E7B620ADFB4E0097DB86 /* DictionaryKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryKey.m; sourceTree = "<group>"; };
+		2C8B6FAF22B59B8A00DB4348 /* PivotHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PivotHeaderView.xib; path = Resource/PivotHeaderView.xib; sourceTree = "<group>"; };
+		2C8B6FB022B59B8A00DB4348 /* PivotHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PivotHeaderView.swift; path = Resource/PivotHeaderView.swift; sourceTree = "<group>"; };
 		2CB281DE20BC596300CBF2A4 /* LabelPadded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPadded.swift; sourceTree = "<group>"; };
 		2CD70C0F20AF40C4007454F6 /* ViewControllerPivot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPivot.swift; sourceTree = "<group>"; };
 		2CD92E3620AF89BF004E622F /* DataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccess.h; sourceTree = "<group>"; };
@@ -102,6 +110,10 @@
 			children = (
 				2C81E79820ADFA300097DB86 /* Main.storyboard */,
 				2C81E7A020ADFA320097DB86 /* LaunchScreen.storyboard */,
+				2C8B6FB022B59B8A00DB4348 /* PivotHeaderView.swift */,
+				2C8B6FAF22B59B8A00DB4348 /* PivotHeaderView.xib */,
+				2C31E35F22B579C600F6C7FB /* PivotRowView.swift */,
+				2C31E36122B579CE00F6C7FB /* PivotRowView.xib */,
 				2CDE128D20B7221D00D1CFCA /* CustomCell */,
 			);
 			name = Resource;
@@ -261,10 +273,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8B6FB122B59B8A00DB4348 /* PivotHeaderView.xib in Resources */,
 				2CCED4FC20B72860009A225B /* RowCell.xib in Resources */,
 				2CCED4F920B72841009A225B /* LaunchScreen.storyboard in Resources */,
 				2C81E79F20ADFA320097DB86 /* Assets.xcassets in Resources */,
 				2C81E79A20ADFA300097DB86 /* Main.storyboard in Resources */,
+				2C31E36222B579CE00F6C7FB /* PivotRowView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,9 +302,11 @@
 				2C4C199420B4C5E2006D35C1 /* ViewControllerPage.swift in Sources */,
 				2CD92E3820AF89BF004E622F /* DataAccess.m in Sources */,
 				2CB281DF20BC596300CBF2A4 /* LabelPadded.swift in Sources */,
+				2C31E36022B579C600F6C7FB /* PivotRowView.swift in Sources */,
 				2CCED4FB20B72860009A225B /* RowCell.swift in Sources */,
 				2C81E79520ADFA300097DB86 /* AppDelegate.swift in Sources */,
 				2C6B6B9A20B630A6008B9FF9 /* ViewControllerBorrow.swift in Sources */,
+				2C8B6FB222B59B8A00DB4348 /* PivotHeaderView.swift in Sources */,
 				2C6B6B9D20B63709008B9FF9 /* CHCSVParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

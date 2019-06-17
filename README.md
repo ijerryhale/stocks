@@ -24,6 +24,12 @@ Update to XCode 10, Swift 4.2
 
 Update to Swift 5.
 
+## June 17, 2019
+
+Add contraints and Stack Views for Pivot Page. Rewrote some of ViewControllerPivot to make it easier to resize and move things around.
+
+Still a bit of work to do on Pivot Points Page but this version handles multiple devices and rotation pretty well. 
+
 ## Requirements
 
 - XCode 10+

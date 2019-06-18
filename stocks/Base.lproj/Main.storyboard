@@ -274,8 +274,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4S-1x-MCl">
+                                <rect key="frame" x="318.5" y="39" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get"/>
+                                <connections>
+                                    <action selector="getIBBorrowList:" destination="FPH-h9-2LW" eventType="touchUpInside" id="JMB-Vg-cby"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fn9-NJ-K1C">
-                                <rect key="frame" x="6" y="192" width="362" height="459"/>
+                                <rect key="frame" x="6" y="170" width="362" height="459"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -298,9 +306,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hY-6s-KBj">
-                                <rect key="frame" x="6" y="67" width="362" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hY-6s-KBj">
+                                <rect key="frame" x="6.5" y="67" width="362" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2Q2-Ni-kxA"/>
+                                    <constraint firstAttribute="width" constant="362" id="W9W-gI-HHO"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Symbol</string>
@@ -319,15 +330,11 @@
                                     <outlet property="delegate" destination="FPH-h9-2LW" id="dwe-UT-gYU"/>
                                 </connections>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="File Creation Time:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWD-Fj-hic" customClass="LabelPadded" customModule="stocks" customModuleProvider="target">
-                                <rect key="frame" x="3" y="35" width="156" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Creation Time:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWD-Fj-hic" customClass="LabelPadded" customModule="stocks" customModuleProvider="target">
+                                <rect key="frame" x="6.5" y="44" width="151" height="20"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                 </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="90r-03-zfU"/>
-                                    <constraint firstAttribute="height" constant="20" id="biC-7W-umo"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -338,30 +345,34 @@
                                     <userDefinedRuntimeAttribute type="nil" keyPath="backColor"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="6rM-LU-9tC" userLabel="fileTime">
-                                <rect key="frame" x="166" y="35" width="146" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stW-dI-0DP" customClass="TableViewFooter" customModule="stocks" customModuleProvider="target">
+                                <rect key="frame" x="6" y="629" width="362" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="6rM-LU-9tC" userLabel="fileTime">
+                                <rect key="frame" x="157.5" y="45" width="146" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ppN-jo-yCh"/>
+                                    <constraint firstAttribute="width" constant="146" id="wHP-Pe-l0E"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stW-dI-0DP" customClass="TableViewFooter" customModule="stocks" customModuleProvider="target">
-                                <rect key="frame" x="6" y="620" width="362" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4S-1x-MCl">
-                                <rect key="frame" x="329" y="30" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Get"/>
-                                <connections>
-                                    <action selector="getIBBorrowList:" destination="FPH-h9-2LW" eventType="touchUpInside" id="JMB-Vg-cby"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A4S-1x-MCl" firstAttribute="leading" secondItem="6rM-LU-9tC" secondAttribute="trailing" constant="15" id="0C3-OT-cm3"/>
+                            <constraint firstItem="0hY-6s-KBj" firstAttribute="centerX" secondItem="8eF-at-5uX" secondAttribute="centerX" id="8uH-an-7yK"/>
+                            <constraint firstItem="A4S-1x-MCl" firstAttribute="top" secondItem="ycy-Vc-TCW" secondAttribute="bottom" constant="19" id="941-Ge-Rg9"/>
+                            <constraint firstItem="6rM-LU-9tC" firstAttribute="top" secondItem="ycy-Vc-TCW" secondAttribute="bottom" constant="25" id="JE4-g7-bf3"/>
+                            <constraint firstItem="6rM-LU-9tC" firstAttribute="leading" secondItem="PWD-Fj-hic" secondAttribute="trailing" id="TES-TV-8xd"/>
+                            <constraint firstItem="PWD-Fj-hic" firstAttribute="top" secondItem="ycy-Vc-TCW" secondAttribute="bottom" constant="24" id="WV6-zq-4ec"/>
+                            <constraint firstItem="0hY-6s-KBj" firstAttribute="top" secondItem="6rM-LU-9tC" secondAttribute="bottom" constant="1" id="Z7q-ya-9gJ"/>
+                            <constraint firstItem="PWD-Fj-hic" firstAttribute="leading" secondItem="0hY-6s-KBj" secondAttribute="leading" id="cCK-zL-9Wq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="yEA-oc-QFC" id="i7e-hr-WUH"/>
@@ -395,7 +406,7 @@
                                 </connections>
                             </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="LFz-uX-2eM">
-                                <rect key="frame" x="168" y="19" width="39" height="37"/>
+                                <rect key="frame" x="168" y="9" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
